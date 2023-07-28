@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GROUP 29</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">GROUP 29</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="health.html">Health</a></li>
+        <li><a href="sports.html">Sports</a></li>
+        <li><a href="entertainment.html">Entertainment</a></li>
+        <li><a href="#search">Search</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="home">
+      <h1>Top Headlines</h1>
+      <div class="news-list" id="top-headlines"></div>
+    </section>
+
+    <section id="categories">
+      <h1>Categories</h1>
+      <ul class="category-list">
+        <li><a href="health.html">Health</a></li>
+        <li><a href="sports.html">Sports</a></li>
+        <li><a href="politics.html">politics</a></li>
+        <li><a href="Economy.html">Economy</a></li>
+       
+
+      </ul>
+    </section>
+
+<div class="personalization">
+  <h3>Select Preferred News Categories:</h3>
+  <label>
+    <input type="checkbox" name="categories" value="health">
+    Health
+  </label>
+  <label>
+    <input type="checkbox" name="categories" value="sports">
+    Sports
+  </label>
+  <label>
+    <input type="checkbox" name="categories" value="entertainment">
+    Entertainment
+  </label>
+  <!-- Add more checkboxes for other news categories as needed -->
+  <button onclick="savePreferredCategories()">Save Preferences</button>
+</div>
+
+    <section id="search">
+      <h1>Search News Articles</h1>
+      <form id="search-form">
+        <input type="text" id="search-input" placeholder="Enter keywords">
+        <button type="submit">Search</button>
+      </form>
+      <div class="news-list" id="search-results"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="contact-info">GROUP 29.com</div>
+  </footer>
+
+  <script src="scripts.js"></script>
+  <script src="server.js"></script>
+  <script src="save.js"></script>
+  
+</body>
+
+</html>
